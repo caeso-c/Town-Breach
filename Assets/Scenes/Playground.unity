@@ -126,6 +126,39 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 0ccc7537fd6cad24fa7177815df42b9d, type: 2}
+--- !u!1 &497196470 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2338735460378879586, guid: 2c371003c044dfa42abd0ea59ff0399f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2338735460301192148}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &497196474
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497196470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.075498424, y: 0.31807214, z: 0.832286}
+  m_Center: {x: 0.000000044703484, y: 0.022799902, z: 0.27416432}
+--- !u!114 &497196475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497196470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf4abc49e2ccefc43af0541ecc7d4c01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 2338735460301192149}
+  range: 100
 --- !u!1 &523911829
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,6 +676,24 @@ LightProbeGroup:
   - {x: 7.1518564, y: 2.7763042, z: -11.2319765}
   - {x: 8.993203, y: 2.3566551, z: -8.796325}
   m_Dering: 1
+--- !u!1 &992039599 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4820652584088881549, guid: 4efff9651ceb7f44a9264578aa5843c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 4820652582120192827}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &992039606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992039599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8bbc87a4b54354f9c7a1acd1d50e5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1028513131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,6 +1388,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c371003c044dfa42abd0ea59ff0399f, type: 3}
+--- !u!20 &2338735460301192149 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2338735460154426157, guid: 2c371003c044dfa42abd0ea59ff0399f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2338735460301192148}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4820652582120192827
 PrefabInstance:
   m_ObjectHideFlags: 0
