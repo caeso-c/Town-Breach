@@ -54,7 +54,6 @@ public class EnemyAI : MonoBehaviour
     void AttackTarget()
     {
         GetComponent<Animator>().SetBool("Attack", true);
-        Debug.Log("You are under attack!");
     }
 
     void OnDrawGizmosSelected() // display markers for chaseRadius when enemy is selected

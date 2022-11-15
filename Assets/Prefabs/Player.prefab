@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2420287260518402192}
   - component: {fileID: 2420287260518402283}
   - component: {fileID: 2338735462086487152}
+  - component: {fileID: 3247527122454745611}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -221,6 +222,19 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &3247527122454745611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2338735460101356478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eab84e7487f50ef489f9d97df8ee7508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 0}
 --- !u!1 &2338735460154426149
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +579,12 @@ PrefabInstance:
       propertyPath: FPCamera
       value: 
       objectReference: {fileID: 2338735460154426157}
+    - target: {fileID: 7366955612011497004, guid: 771bc8fa26228744b9f8dd8ea2f6e140,
+        type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 2256529159660827883, guid: 3e46f294d287a6a4d88193eb72bcc458,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 771bc8fa26228744b9f8dd8ea2f6e140, type: 3}
 --- !u!4 &2338735460378879587 stripped
