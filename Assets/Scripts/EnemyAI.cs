@@ -31,6 +31,11 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    public void OnDamageTaken() // if enemy takes damage, enable provoked
+    {
+        isProvoked = true;
+    }
+
     void EngageTarget()
     {
         FaceTarget();
