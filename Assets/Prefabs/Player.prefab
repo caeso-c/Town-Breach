@@ -426,6 +426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2338735460365547500}
+  - component: {fileID: 3074458928794540856}
   m_Layer: 8
   m_Name: Weapons
   m_TagString: Untagged
@@ -445,12 +446,25 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2044045980490879948}
   - {fileID: 2338735460378879587}
   - {fileID: 3764604816569190411}
-  - {fileID: 2044045980490879948}
   m_Father: {fileID: 2338735460154426158}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3074458928794540856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2338735460365547491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f2b0e3095e47240ab02ded2f67f5d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeapon: 2
 --- !u!1 &2338735460938241869
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +561,7 @@ PrefabInstance:
     - target: {fileID: 5064425987443834356, guid: 3f95cbfa780078043bf3852d0ed3f165,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5064425987443834356, guid: 3f95cbfa780078043bf3852d0ed3f165,
         type: 3}
@@ -607,7 +621,7 @@ PrefabInstance:
     - target: {fileID: 5064425987443834357, guid: 3f95cbfa780078043bf3852d0ed3f165,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7366955612011497004, guid: 3f95cbfa780078043bf3852d0ed3f165,
         type: 3}
@@ -647,7 +661,7 @@ PrefabInstance:
     - target: {fileID: 5064425987443834356, guid: 771bc8fa26228744b9f8dd8ea2f6e140,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5064425987443834356, guid: 771bc8fa26228744b9f8dd8ea2f6e140,
         type: 3}
@@ -742,7 +756,7 @@ PrefabInstance:
     - target: {fileID: 5064425987443834356, guid: 2d34af1992fa2c744ae7e130e2683083,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5064425987443834356, guid: 2d34af1992fa2c744ae7e130e2683083,
         type: 3}
@@ -802,7 +816,7 @@ PrefabInstance:
     - target: {fileID: 5064425987443834357, guid: 2d34af1992fa2c744ae7e130e2683083,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7366955612011497004, guid: 2d34af1992fa2c744ae7e130e2683083,
         type: 3}
@@ -829,7 +843,7 @@ PrefabInstance:
         type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 874244544889619523, guid: 0728f683564eb00408dbd34352577569,
+      objectReference: {fileID: 3614249443508621660, guid: 4a60d8477aafac045a1f56d3a60c7813,
         type: 3}
     - target: {fileID: 7366955612011497004, guid: 2d34af1992fa2c744ae7e130e2683083,
         type: 3}

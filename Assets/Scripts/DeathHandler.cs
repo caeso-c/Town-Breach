@@ -15,6 +15,7 @@ public class DeathHandler : MonoBehaviour
     {
         gameOverCanvas.enabled = true; // enables game over canvas after death
         Time.timeScale = 0; // stopping time prevents clashing between game mode and cursor mode
+        FindObjectOfType<WeaponSwitcher>().enabled = false; // stops ability to scroll weapons during death
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true; // makes cursor visible to player
     }
