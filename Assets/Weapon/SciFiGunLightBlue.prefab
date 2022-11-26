@@ -118,6 +118,8 @@ MonoBehaviour:
   hitEffect: {fileID: 2256529159660827883, guid: 3e46f294d287a6a4d88193eb72bcc458,
     type: 3}
   ammoSlot: {fileID: 0}
+  ammoType: 1
+  timeBetweenShots: 0
 --- !u!1001 &1231789111512467913
 PrefabInstance:
   m_ObjectHideFlags: 0
