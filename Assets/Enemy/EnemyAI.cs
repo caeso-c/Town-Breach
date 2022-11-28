@@ -12,14 +12,23 @@ public class EnemyAI : MonoBehaviour
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
+    EnemyHealth health;
     
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        health = GetComponent<EnemyHealth>();
     }
 
     void Update()
     {
+        if (health.IsDead()) // if enemy is dead, disable script and navmeshagent
+        {
+            enabled = false;
+            navMeshAgent.enabled = false;
+            GetComponent<CapsuleCollider>().enabled = false;
+        }
+
         distanceToTarget = Vector3.Distance(transform.position, target.position);
         if (isProvoked) // first checks if isProvoked is enabled, which will activate in else if - if player is within chaseRadius
         {
@@ -56,7 +65,11 @@ public class EnemyAI : MonoBehaviour
     {
         GetComponent<Animator>().SetBool("Attack", false);
         GetComponent<Animator>().SetTrigger("Move");
-        navMeshAgent.SetDestination(target.position); // after each frame, move or set destination of navMeshAgent to be whereever the player is
+        if (!health.IsDead()) // if isDead is false
+        {
+            navMeshAgent.SetDestination(target.position); // after each frame, move or set destination of navMeshAgent to be whereever the player is
+        }
+        
     }
 
     void AttackTarget() // attacks player
