@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 3247527122454745611}
   - component: {fileID: 1644394848}
   - component: {fileID: 2468686071949091778}
+  - component: {fileID: 980398793}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -250,6 +251,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
+  yellowReticleCanvas: {fileID: 0}
+  blueReticleCanvas: {fileID: 0}
+  redReticleCanvas: {fileID: 0}
 --- !u!114 &2468686071949091778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,9 +270,23 @@ MonoBehaviour:
   - ammoType: 0
     ammoAmount: 15
   - ammoType: 1
-    ammoAmount: 40
+    ammoAmount: 50
   - ammoType: 2
     ammoAmount: 3
+--- !u!114 &980398793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2338735460101356478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 486f760ebaa36774faa476c34e2b6b6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageCanvas: {fileID: 0}
+  damageTime: 0.3
 --- !u!1 &2338735460154426149
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,7 +653,7 @@ PrefabInstance:
     - target: {fileID: 7366955612011497004, guid: 3f95cbfa780078043bf3852d0ed3f165,
         type: 3}
       propertyPath: damage
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7366955612011497004, guid: 3f95cbfa780078043bf3852d0ed3f165,
         type: 3}

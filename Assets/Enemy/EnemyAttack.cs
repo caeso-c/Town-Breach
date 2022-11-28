@@ -16,6 +16,6 @@ public class EnemyAttack : MonoBehaviour
     {
         if (target == null) return;
         target.TakeDamage(damage); // passing damage parameter to player health TakeDamage method
-        Debug.Log("BOOM");
+        target.GetComponent<DisplayDamage>().ShowDamageCanvas();
     }
 }
