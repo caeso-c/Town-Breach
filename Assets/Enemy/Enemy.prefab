@@ -3368,10 +3368,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.31787628
+  m_Radius: 0.42638066
   m_Height: 1.8790288
   m_Direction: 1
-  m_Center: {x: 0.023922378, y: 0.7060611, z: 0.06506467}
+  m_Center: {x: 0.036366694, y: 0.7060611, z: 0.065064676}
 --- !u!195 &4851291572868176626
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3382,7 +3382,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.53
-  m_Speed: 5
+  m_Speed: 4.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -3426,7 +3426,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25c6a0ad93696f94aa4cab3cf02001eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   chaseRadius: 12
   turnSpeed: 5
 --- !u!114 &9153387955990708453
