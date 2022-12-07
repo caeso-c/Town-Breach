@@ -18,6 +18,23 @@ public class PlayerHealth : MonoBehaviour
     private void DisplayHealth()
     {
         healthBar.text = hitPoints.ToString() + "%";
+
+        if (hitPoints >= 80)
+        {
+            healthBar.color = Color.green;
+        }
+        if (hitPoints == 60 || hitPoints == 40)
+        {
+            healthBar.color = Color.yellow;
+        }
+        if (hitPoints <= 20)
+        {
+            healthBar.color = Color.red;
+        }
+        else
+        {
+            return;
+        }
     }
 
     // create public method that reduces hit points by amount of damage
