@@ -11,7 +11,7 @@ public class Win : MonoBehaviour
     [SerializeField] Canvas redReticleCanvas;
     [SerializeField] TextMeshProUGUI enemiesLeft;
 
-    public int enemyCounter = 30;
+    public int enemyCounter = 40;
 
     // variable array (for enemies)
 
