@@ -1,12 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] float hitPoints = 100f;
 
-    bool isDead = false;
+    Win win;
+
+    public bool isDead = false;
+
+    void Start()
+    {
+        win = FindObjectOfType<Win>();
+    }
 
     public bool IsDead()
     {
@@ -28,6 +36,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (isDead) return; // prevents enemy from retriggering death animation after being shot again
         isDead = true;
+        win.enemyCounter--;
         GetComponent<Animator>().SetTrigger("Death");
     }
 }

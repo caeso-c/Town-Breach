@@ -8,6 +8,7 @@ TagManager:
   - Yellow Reticle
   - Red Reticle
   - Blue Reticle
+  - Enemy
   layers:
   - Default
   - TransparentFX

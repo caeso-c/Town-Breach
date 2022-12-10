@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 1644394848}
   - component: {fileID: 2468686071949091778}
   - component: {fileID: 980398793}
+  - component: {fileID: 1073728874157205378}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -250,6 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab84e7487f50ef489f9d97df8ee7508, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
   hitPoints: 100
 --- !u!114 &1644394848
 MonoBehaviour:
@@ -300,6 +302,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageCanvas: {fileID: 0}
   damageTime: 0.3
+--- !u!114 &1073728874157205378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2338735460101356478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eff406236e908b498d45bcd5b6200a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winCanvas: {fileID: 0}
+  yellowReticleCanvas: {fileID: 0}
+  blueReticleCanvas: {fileID: 0}
+  redReticleCanvas: {fileID: 0}
+  enemiesLeft: {fileID: 0}
+  enemyCounter: 30
 --- !u!1 &2338735460154426149
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,7 +701,7 @@ PrefabInstance:
     - target: {fileID: 7366955612011497004, guid: 3f95cbfa780078043bf3852d0ed3f165,
         type: 3}
       propertyPath: timeBetweenShots
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f95cbfa780078043bf3852d0ed3f165, type: 3}
