@@ -1,5 +1,6 @@
 # Town-Breach
-Can you fend off a horde of cybernetic monsters invading a small town? - First person shooter mini project made with Unity
+"Fend off a horde of cyber monsters invading a small town."
+Solo first person shooter project made with Unity using free assets.
 
 Objective: Kill all enemies in the town.
 Tips: You have limited ammo. Be wary of enemies around corners!
